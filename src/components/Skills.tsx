@@ -8,10 +8,6 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          Skills & <span className="text-blue-600">Expertise</span>
-        </h2>
-
         <div className="mx-auto flex flex-col w-full items-center gap-8">
           {skills.map((skill, index) => {
             return (

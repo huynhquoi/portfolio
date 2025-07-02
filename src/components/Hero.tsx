@@ -1,14 +1,14 @@
 import { portfolioData } from "@/data/portfolio";
-import { Github, Linkedin, Mail, MapPin, Dot } from "lucide-react";
+import { MapPin, Dot } from "lucide-react";
 import Image from "next/image";
 
 const Hero = () => {
     const { personal } = portfolioData;
 
     return (
-        <section className="min-h-screen flex items-center justify-center">
+        <section id="hero" className="min-h-screen flex items-center justify-center">
             <div className="container mx-auto px-4 py-20">
-                <div className="max-w-6xl mx-auto flex items-center justify-between">
+                <div className="max-w-6xl mx-auto flex flex-col items-center lg:flex-row  justify-between">
                     <div className="text-left">
                         <h1 className="text-5xl md:text-7xl font-bold mb-6">
                             Hi, I'm {" "}

@@ -8,6 +8,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Experiences from "./Experiences";
 
 const Portfolio = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ const Portfolio = () => {
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             <Hero />
             <About />
+            <Experiences />
             <Skills />
             <Projects />
             <Contact />

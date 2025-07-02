@@ -19,16 +19,16 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const navItems = ['About', 'Skills', 'Projects', 'Experience', 'Contact'];
+    const navItems = ['About', 'Experiences', 'Skills', 'Projects', 'Contact'];
 
     return (
         <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-state-900 backdrop-blur-md shadow-lg border-b' : 'bg-transparent'
             }`}>
             <div className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
-                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    <a href={`#hero`} className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                         Huynh Van Quoi
-                    </div>
+                    </a>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
@@ -36,7 +36,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}
-                                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                                className="text-white hover:text-blue-600 transition-colors font-medium"
                             >
                                 {item}
                             </a>
