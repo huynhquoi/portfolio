@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className="max-w-6xl mx-auto flex flex-col items-center lg:flex-row  justify-between">
                     <div className="text-left">
                         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                            Hi, I'm {" "}
+                            Hi, I&apos;m {" "}
                             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                                 {personal.name}
                             </span>
