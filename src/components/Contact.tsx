@@ -39,7 +39,7 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div>
-            <h3 className="text-2xl font-bold mb-6">Let's Work Together</h3>
+            <h3 className="text-2xl font-bold mb-6">Let&apos;s Work Together</h3>
             <p className="text-white mb-8 leading-relaxed">
               🚀 I’m open to new opportunities of all kinds—whether you’re
               looking for a committed full-time developer or a freelance partner
@@ -124,7 +124,7 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows="4"
+                  rows={4}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black"
                 ></textarea>
               </div>
